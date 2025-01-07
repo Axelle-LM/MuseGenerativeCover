@@ -34,7 +34,7 @@ h1 {
   bottom: 0;
   right: 0;
   text-align: center;
-  padding: 10px 100px 10px 100px;
+  padding: 1.5vh 6.5vw 1.5vh 6.5vw;
 }
 
 .gradient {
@@ -50,14 +50,14 @@ h1 {
 }
 
 .gradient img {
-  height: 350px;
+  height: 53vh;
   width: auto;
 }
 
 .presentation {
   color: white;
   background-color: rgb(0 0 0 / 63%);
-  height: 350px;
+  height: 50vh;
   width: 30%;
   position: absolute;
   right: 0;
