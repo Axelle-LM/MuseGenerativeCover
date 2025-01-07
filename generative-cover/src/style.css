@@ -3,3 +3,64 @@
 }
 
 body {}
+
+h1 {
+  color: white;
+  display: inline-block;
+  font-size: 64px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 3vh;
+}
+
+.beginning-page {
+  height: 100vh;
+  width: auto;
+  background-color: #29282C;
+  background-image: url(img/strap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.beginning-page .logo {
+  width: 200px;
+  margin: 20px 20px 0 20px;
+}
+
+.beginning-page .date {
+  font-size: 64px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(217 217 217 / 56%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.gradient {
+  width: 45%;
+  height: 350px;
+  background: linear-gradient(#77090A, #1F0685);
+  opacity: 51%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 15%;
+}
+
+.gradient img {
+  height: 350px;
+  width: auto;
+}
+
+.presentation {
+  color: white;
+  background-color: rgb(0 0 0 / 63%);
+  height: 350px;
+  width: 25%;
+  position: absolute;
+  left: 65%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
