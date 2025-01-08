@@ -315,3 +315,21 @@ function drawStars() {
 }
 
 loop();
+
+document.getElementById('toggle-panel-btn')?.addEventListener('click', () => {
+	const panel = document.getElementById('controls-container');
+	const btn = document.getElementById('toggle-panel-btn');
+
+	panel?.classList.toggle('collapsed');
+
+	if (panel?.classList.contains('collapsed')) {
+		if (btn) {
+			btn.textContent = 'Afficher les options';
+		}
+	} else {
+		if (btn) {
+			btn.textContent = 'Masquer les options';
+		}
+	}
+});
+

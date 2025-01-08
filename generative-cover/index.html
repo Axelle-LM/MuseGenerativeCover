@@ -44,24 +44,27 @@
 			<h1>Faites votre propre pochette d’album !</h1>
 			<div class="main-content">
 				<div class="left-panel">
-					<div id="controls-container">
-						<label for="hexSize">Hexagon Size:</label>
-						<input type="range" id="hexSize" min="9" max="22" value="11" />
-						<label for="petalCount">Petal Count:</label>
-						<input type="range" id="petalCount" min="6" max="17" value="13" />
-						<button id="showPetalBtn">Afficher les pétales</button>
-						<button id="rotateVinylBtn">Tourner le vinyle</button>
-						<button id="shadowBtn">Tourner l’ombre</button>
-						<button id="logoBtn">Tourner le logo</button>
-						<label for="textSize">Taille du texte:</label>
-						<input type="range" id="textSize" min="20" max="58" value="30" />
-						<label for="textColor">Couleur du texte:</label>
-						<input type="color" id="textColor" value="#ffffff" />
-						<label for="strokeColor">Couleur du contour:</label>
-						<input type="color" id="strokeColor" value="#000000" />
-						<button id="toggle3DEffectBtn">Desactivé l’effet 3D</button>
-						<label for="text3DOffset">Décalage 3D :</label>
-						<input type="range" id="text3DOffset" min="1" max="10" value="5" />
+					<div class="left-panel">
+						<button id="toggle-panel-btn" class="panel-toggle-btn">Masquer les options</button>
+						<div id="controls-container" class="collapsible-panel collapsed">
+							<label for="hexSize">Hexagon Size:</label>
+							<input type="range" id="hexSize" min="9" max="22" value="11" />
+							<label for="petalCount">Petal Count:</label>
+							<input type="range" id="petalCount" min="6" max="17" value="13" />
+							<button id="showPetalBtn">Afficher les pétales</button>
+							<button id="rotateVinylBtn">Tourner le vinyle</button>
+							<button id="shadowBtn">Tourner l’ombre</button>
+							<button id="logoBtn">Tourner le logo</button>
+							<label for="textSize">Taille du texte:</label>
+							<input type="range" id="textSize" min="20" max="58" value="30" />
+							<label for="textColor">Couleur du texte:</label>
+							<input type="color" id="textColor" value="#ffffff" />
+							<label for="strokeColor">Couleur du contour:</label>
+							<input type="color" id="strokeColor" value="#000000" />
+							<button id="toggle3DEffectBtn">Desactivé l’effet 3D</button>
+							<label for="text3DOffset">Décalage 3D :</label>
+							<input type="range" id="text3DOffset" min="1" max="10" value="5" />
+						</div>
 					</div>
 				</div>
 				<div class="generation">
