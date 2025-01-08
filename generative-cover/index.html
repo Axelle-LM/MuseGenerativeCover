@@ -1,55 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			rel="stylesheet"
+		/>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<title>Vite + TS</title>
+	</head>
 
+	<body>
+		<div class="beginning-page">
+			<img src="src/img/logo.png" alt="" class="logo" />
+			<h1>Absolution XX Anniversary Box Set</h1>
 
-  <title>Vite + TS</title>
-</head>
+			<div class="gradient">
+				<img src="src/img/product.png" alt="" class="product" />
+			</div>
 
-<body>
+			<p class="presentation">
+				Ce coffret propose pour son 20ème anniversaire l’album ‘Absolution’ en version remasterisée,
+				ainsi que des démos et des versions Live inédites de titres de l’album. Le livre 40 pages de
+				cette édition présente des photos, une nouvelle interview par Mark Beaumont concernant la
+				genèse et l’enregistrement de l’album.
+			</p>
 
-  <div class="beginning-page">
-    <img src="src/img/logo.png" alt="" class="logo">
-    <h1>Absolution XX Anniversary Box Set</h1>
+			<p class="date">
+				November <br />
+				17th
+			</p>
+		</div>
 
-    <div class="gradient">
-      <img src="src/img/product.png" alt="" class="product">
-    </div>
+		<div class="album">
+			<!-- <div class="subtrack"><img src="src/img/strap.png" alt=""></div> -->
+			<h1>Faites votre propre pochette d’album !</h1>
+			<div class="main-content">
+				<div class="left-panel">
+					<div id="controls-container">
+						<label for="hexSize">Hexagon Size:</label>
+						<input type="range" id="hexSize" min="9" max="22" value="11" />
+						<label for="petalCount">Petal Count:</label>
+						<input type="range" id="petalCount" min="6" max="17" value="13" />
+						<button id="showPetalBtn">Afficher les pétales</button>
+						<button id="rotateVinylBtn">Tourner le vinyle</button>
+						<button id="shadowBtn">Tourner l’ombre</button>
+						<button id="logoBtn">Tourner le logo</button>
+						<label for="textSize">Taille du texte:</label>
+						<input type="range" id="textSize" min="20" max="58" value="30" />
+						<label for="textColor">Couleur du texte:</label>
+						<input type="color" id="textColor" value="#ffffff" />
+						<label for="strokeColor">Couleur du contour:</label>
+						<input type="color" id="strokeColor" value="#000000" />
+						<button id="toggle3DEffectBtn">Desactivé l’effet 3D</button>
+						<label for="text3DOffset">Décalage 3D :</label>
+						<input type="range" id="text3DOffset" min="1" max="10" value="5" />
+					</div>
+				</div>
+				<div class="generation">
+					<canvas id="c"></canvas>
+				</div>
+				<div class="rigth-panel">
+					<div class="download-section">
+						<button class="download-icon">
+							<i class="fas fa-download"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <p class="presentation">Ce coffret propose pour son 20ème anniversaire l’album ‘Absolution’ en version remasterisée,
-      ainsi que des démos et des versions Live inédites de titres de l’album. Le livre 40 pages de cette édition
-      présente des photos, une nouvelle interview par Mark Beaumont concernant la genèse et l’enregistrement de l’album.
-    </p>
-
-    <p class="date">November <br> 17th</p>
-  </div>
-
-  <div class="album">
-    <!-- <div class="subtrack"><img src="src/img/strap.png" alt=""></div> -->
-    <h1>Faites votre propre pochette d’album !</h1>
-    <div class="main-content">
-      <div class="generation">Génération ici</div>
-      <div class="left-panel">
-        <div class="panel">
-          <p>Panel</p>
-        </div>
-        <div class="download-section">
-          <button class="download-icon">
-            <i class="fas fa-download"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script type="module" src="/src/main.ts"></script>
-</body>
-
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>
