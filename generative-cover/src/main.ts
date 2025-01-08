@@ -333,3 +333,17 @@ document.getElementById('toggle-panel-btn')?.addEventListener('click', () => {
 	}
 });
 
+document.querySelector('.download-icon')?.addEventListener('click', () => {
+	const canvas = document.getElementById('c');
+	if (!canvas) {
+		alert('Canvas non trouvé.');
+		return;
+	}
+
+	const image = canvas?.toDataURL('image/png');
+	const link = document.createElement('a');
+	link.href = image;
+	link.download = 'canvas_image.png';
+	link.click();
+});
+
