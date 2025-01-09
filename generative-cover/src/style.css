@@ -91,8 +91,15 @@ h1 {
 	}
 }
 
-.album {
+.background{
 	height: 100vh;
+	background-image: url(img/background.png);
+	/* background-repeat: no-repeat; */
+	background-size: cover;
+}
+
+.album {
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -126,10 +133,37 @@ h1 {
 	width: 80%;
 	z-index: 2;
 }
+
+@media (max-width: 1200px) {
+	
+	.album h1 {
+		font-size: 40px;
+		text-align: center;
+		margin-right: 0;
+
+	}
+	}
+
 @media (max-width: 768px) {
+	.album{
+		height: 100ch;
+	}
+	.album h1 {
+		font-size: 40px;
+		text-align: center;
+		/* margin-right: 0; */
+		/* height: auto; */
+	}
 	.main-content {
 		display: flex;
 		flex-direction: column;
+	}
+}
+
+@media (max-width: 631px) {
+	.album h1 {
+		font-size: 30px;
+		text-align: center;
 	}
 }
 
@@ -292,4 +326,20 @@ h1 {
 		opacity: 1;
 		pointer-events: all;
 	}
+}
+
+@media (max-width: 400px) {
+	/* .main-content {
+		width: 100%;
+	} */
+	.download-icon {
+		width: 70px;
+		height: 70px;
+	}
+	
+	.download-icon i {
+		font-size: 30px;
+		color: #333;
+	}
+	
 }
