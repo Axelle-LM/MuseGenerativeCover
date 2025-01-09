@@ -332,6 +332,9 @@ h1 {
 	/* .main-content {
 		width: 100%;
 	} */
+	 .download-section{
+		margin-top: 30px;
+	 }
 	.download-icon {
 		width: 70px;
 		height: 70px;
