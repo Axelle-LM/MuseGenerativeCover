@@ -55,6 +55,12 @@ h1 {
 	width: auto;
 }
 
+@media (max-width: 768px){
+  .gradient img {
+    height: 47vh;
+  }
+}
+
 .presentation {
 	color: white;
 	background-color: rgb(0 0 0 / 63%);
