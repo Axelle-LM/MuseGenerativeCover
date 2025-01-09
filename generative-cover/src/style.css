@@ -27,16 +27,24 @@ h1 {
 	margin: 20px 20px 0 20px;
 }
 
-.beginning-page .date {
-	font-size: 64px;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	background-color: rgb(217 217 217 / 56%);
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	text-align: center;
-	padding: 1.5vh 6.5vw 1.5vh 6.5vw;
+@font-face {
+  font-family: 'Franklin Gothic Medium';
+  src: url('../franklin-gothic-medium/OPTIFranklinGothic-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+.beginning-page .date {
+  font-size: 64px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(217, 217, 217, 0.56);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: 1.5vh 6.5vw;
+}
+
 
 .gradient {
 	width: 45%;
